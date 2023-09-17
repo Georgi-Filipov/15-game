@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="info-block">
+    <div class="info-block__item">
+      Moves: <h2 class="moves-counter">0</h2>
+    </div>
+    <div class="info-block__item timer">
+      Time: <h2 class="game-timer">00<span>:</span>00</h2>
+    </div>
+    <div class="info-block__item buttons">
+      <button class="pause-game">pause</button>
+      <button class="new-game">new game</button>
+      <button class="leader-board">leader board</button>
+    </div>
+  </div>
+  <div class="plate-container">
+    <div class="plate">
+      <div data-index="0" data-position="0" style="top: 0; left: 0"><span>1</span></div>
+      <div data-index="1" data-position="1" style="top: 0; left: 25%"><span>2</span></div>
+      <div data-index="2" data-position="2" style="top: 0; left: 50%"><span>3</span></div>
+      <div data-index="3" data-position="3" style="top: 0; left: 75%"><span>4</span></div>
+      <div data-index="4" data-position="4" style="top: 25%; left: 0"><span>5</span></div>
+      <div data-index="5" data-position="5" style="top: 25%; left: 25%"><span>6</span></div>
+      <div data-index="6" data-position="6" style="top: 25%; left: 50%"><span>7</span></div>
+      <div data-index="7" data-position="7" style="top: 25%; left: 75%"><span>8</span></div>
+      <div data-index="8" data-position="8" style="top: 50%; left: 0"><span>9</span></div>
+      <div data-index="9" data-position="9" style="top: 50%; left: 25%"><span>10</span></div>
+      <div data-index="10" data-position="10" style="top: 50%; left: 50%"><span>11</span></div>
+      <div data-index="11" data-position="11" style="top: 50%; left: 75%"><span>12</span></div>
+      <div data-index="12" data-position="12" style="top: 75%; left: 0"><span>13</span></div>
+      <div data-index="13" data-position="13" style="top: 75%; left: 25%"><span>14</span></div>
+      <div data-index="14" data-position="14" style="top: 75%; left: 50%"><span>15</span></div>
+      <div data-index="15" data-position="15" class="empty" style="top: 75%; left: 75%"></div>
+    </div>
+  </div>
+  <div class="popup-wrapper winner-popup">
+    <div class="popup">
+      <h2>Win!</h2>
+      <p>You won with <span>0</span> moves.</p>
+      <button class="new-game">new game</button>
+    </div>
+  </div>
+
+  <div class="popup-wrapper leader-board-popup">
+    <div class="popup">
+      <h2>Leader board</h2>
+      <table>
+        <thead>
+        <tr>
+          <td>Name</td>
+          <td class="digits">Moves</td>
+          <td class="digits">Time</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button>done</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
